@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   },
   description:
     "NCIRI Slaheddine Kadiria — Travaux publics. Voirie, VRD, génie civil, assainissement et aménagements urbains.",
+   icons: {
+    icon: [{ url: "/assets/nsktp-favicon.png", type: "image/png" }],
+    apple: [{ url: "/assets/nsktp-favicon.png" }],
+    shortcut: "/assets/nsktp-favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
