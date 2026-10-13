@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Aeroclim pour votre projet. Formulaire intelligent, WhatsApp, téléphone. Zones d'intervention France entière.">
+    <title>Contact | Aeroclim</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo" aria-label="Aeroclim - Accueil">Aeroclim</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html" class="active btn-nav">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Contactez-nous</h1>
+            <p class="page-hero-subtitle">Un expert vous répond sous 24h. Planning limité.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 class="section-title">Demander une étude</h2>
+                    <p class="contact-intro">
+                        Décrivez votre projet et nos experts vous proposeront la solution optimale.
+                    </p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="projectType">Type de projet *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Sélectionnez un type</option>
+                                <option value="cvc">Génie Climatique & CVC</option>
+                                <option value="air">Air Comprimé & Réseaux</option>
+                                <option value="piscine">Piscines & Traitement Eau</option>
+                                <option value="ssi">Sécurité Incendie (SSI)</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Entreprise / Site</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Décrivez votre projet *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre besoin, vos contraintes, la surface concernée, etc."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="consent" required>
+                                <span>J'accepte que mes données soient utilisées pour me recontacter. *</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-full">Envoyer ma demande</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-card">
+                        <h3>Contact direct</h3>
+                        <div class="contact-methods">
+                            <a href="tel:+33123456789" class="contact-method">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <strong>Téléphone</strong>
+                                    <span>+33 1 23 45 67 89</span>
+                                </div>
+                            </a>
+                            <a href="mailto:contact@aeroclim.fr" class="contact-method">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-details">
+                                    <strong>Email</strong>
+                                    <span>contact@aeroclim.fr</span>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/33123456789" target="_blank" class="contact-method">
+                                <div class="contact-icon">💬</div>
+                                <div class="contact-details">
+                                    <strong>WhatsApp</strong>
+                                    <span>Chat instantané</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>Horaires</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Lundi - Vendredi</span>
+                                <span>8h00 - 18h00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Urgences</span>
+                                <span>24/7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>Zones d'intervention</h3>
+                        <p class="zones-text">
+                            France entière. Interventions prioritaires : Île-de-France, Rhône-Alpes, PACA, Occitanie, Nouvelle-Aquitaine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section Placeholder -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <div class="map-content">
+                <h3>Nous intervenons partout en France</h3>
+                <p>Zones d'intervention couvrant tout le territoire</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Besoin d'une réponse immédiate ?</h2>
+                <p class="cta-subtitle">Appelez-nous ou utilisez le chatbot pour un pré-diagnostic.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+33123456789" class="btn btn-large">Appeler maintenant</a>
+                    <button class="btn btn-large" onclick="document.getElementById('chatbotToggle').click()">Ouvrir le chatbot</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="footer-title">Aeroclim</h3>
+                    <p class="footer-tagline">L'excellence technique comme standard.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#cvc">Génie Climatique & CVC</a></li>
+                        <li><a href="services.html#air">Air Comprimé</a></li>
+                        <li><a href="services.html#piscine">Piscines & Traitement Eau</a></li>
+                        <li><a href="services.html#ssi">Sécurité Incendie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Entreprise</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                        <li><a href="mailto:contact@aeroclim.fr">contact@aeroclim.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aeroclim. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h4>Assistant Aeroclim</h4>
+                <button class="chatbot-close" id="chatbotClose">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">
+                    <p>Bonjour. Je suis l'assistant technique Aeroclim. Décrivez votre projet.</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Tapez votre message...">
+                <button id="chatbotSend">→</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky CTA Mobile -->
+    <div class="sticky-cta-mobile" id="stickyCTA">
+        <a href="tel:+33123456789" class="sticky-cta-btn">Appeler</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
